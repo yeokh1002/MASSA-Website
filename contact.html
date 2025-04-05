@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASSA</title>
+    <link rel="icon" type="image/png" href="images/logo6.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo6.png" alt="Logo" class="logo" mix-blend-mode: multiply style="width: 100px;height: auto;"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+
+</section>
+<!--Contact Us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11110.16594219851!2d-73.58346319621819!3d45.50696222954055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3829eadafd%3A0x304925aa0c44027d!2sTrottier%20Bldg%2C%203630%20Rue%20University%2C%20Montreal%2C%20QC%20H3A%200C6!5e0!3m2!1sen!2sca!4v1741738759980!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="contact-col">
+        <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Rm. 213, 3630 Rue University, Montreal, QC H3A 0C6</h5>
+                <p>Visit Us</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+1 5146679562</h5>
+                <p>Monday to Friday, 10AM to 4PM</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>massa@mail.mcgill.ca</h5>
+                <p>Email us your query</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <span>
+                <h5>massa_mcgill</h5>
+                <p>DM us your query</p>
+            </span>
+        </div>
+    </div>
+    <div class="comment-box">
+        <h2> Leave a Message</h2>
+        <form class="comment-form" action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="email" name="email" placeholder="Enter Email">
+            <textarea rows="5" name="message" placeholder="Your comment">Your Comment:
+            </textarea>
+            <button type="submit" class="hero-btn red-btn">SUBMIT</button>
+        </form>
+    </div>
+</section>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>McGill's Malaysian and Singaporean Students' Association(MASSA) is a vibrant community dedicated to fostering a sense of belonging,<br> collaboration, and cultural exchange among McGill students based in Malaysia and Singapore. </p>
+    <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Developed by Yeo</p>
+</section>
+
+<!--JavaScript Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
